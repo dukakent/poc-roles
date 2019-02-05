@@ -16,9 +16,7 @@
             "outputPath": "dist/apps/server",
             "main": "apps/server/src/main.ts",
             "tsConfig": "apps/server/tsconfig.app.json",
-            "assets": [
-              "apps/server/src/assets"
-            ]
+            "assets": ["apps/server/src/assets"]
           },
           "configurations": {
             "production": {
@@ -47,9 +45,7 @@
               "apps/server/tsconfig.app.json",
               "apps/server/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -58,6 +54,96 @@
             "jestConfig": "apps/server/jest.config.js",
             "tsConfig": "apps/server/tsconfig.spec.json"
           }
+        }
+      }
+    },
+    "access-control-core": {
+      "root": "libs/access-control/core",
+      "sourceRoot": "libs/access-control/core/src",
+      "projectType": "library",
+      "prefix": "poc-roles",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/access-control/core/tsconfig.lib.json",
+              "libs/access-control/core/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/access-control/core/jest.config.js",
+            "tsConfig": "libs/access-control/core/tsconfig.spec.json"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "access-control-api-nestjs": {
+      "root": "libs/access-control/api/nestjs",
+      "sourceRoot": "libs/access-control/api/nestjs/src",
+      "projectType": "library",
+      "prefix": "poc-roles",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/access-control/api/nestjs/tsconfig.lib.json",
+              "libs/access-control/api/nestjs/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/access-control/api/nestjs/jest.config.js",
+            "tsConfig": "libs/access-control/api/nestjs/tsconfig.spec.json"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "feedback-api-nestjs": {
+      "root": "libs/feedback/api/nestjs",
+      "sourceRoot": "libs/feedback/api/nestjs/src",
+      "projectType": "library",
+      "prefix": "poc-roles",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feedback/api/nestjs/tsconfig.lib.json",
+              "libs/feedback/api/nestjs/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/feedback/api/nestjs/jest.config.js",
+            "tsConfig": "libs/feedback/api/nestjs/tsconfig.spec.json"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
         }
       }
     }

@@ -12,7 +12,18 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@poc-roles/access-control/core": [
+        "libs/access-control/core/src/index.ts"
+      ],
+      "@poc-roles/access-control/api/nestjs": [
+        "libs/access-control/api/nestjs/src/index.ts"
+      ],
+      "@poc-roles/tmp": ["libs/tmp/src/index.ts"],
+      "@poc-roles/feedback/api/nestjs": [
+        "libs/feedback/api/nestjs/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

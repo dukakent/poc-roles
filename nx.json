@@ -10,6 +10,18 @@
   "projects": {
     "server": {
       "tags": []
+    },
+    "access-control-core": {
+      "tags": []
+    },
+    "access-control-api-nestjs": {
+      "tags": []
+    },
+    "tmp": {
+      "tags": []
+    },
+    "feedback-api-nestjs": {
+      "tags": []
     }
   }
 }
