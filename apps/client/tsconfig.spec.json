@@ -1,10 +1,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/libs/access-control/core",
+    "outDir": "../../dist/out-tsc/apps/client/",
     "module": "commonjs",
     "types": ["jest", "node"]
   },
-
+  "files": ["src/test-setup.ts"],
   "include": ["**/*.spec.ts", "**/*.d.ts"]
 }

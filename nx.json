@@ -11,16 +11,16 @@
     "server": {
       "tags": []
     },
-    "access-control-core": {
-      "tags": []
-    },
     "access-control-api-nestjs": {
       "tags": []
     },
-    "tmp": {
+    "feedback-api-nestjs": {
       "tags": []
     },
-    "feedback-api-nestjs": {
+    "objectives-api-nestjs": {
+      "tags": []
+    },
+    "client": {
       "tags": []
     }
   }

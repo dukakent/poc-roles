@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/libs/access-control/core",
+    "outDir": "../../../../dist/out-tsc/libs/objectives/api/nestjs",
     "target": "es2015",
     "module": "es2015",
     "moduleResolution": "node",
